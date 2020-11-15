@@ -1,0 +1,209 @@
+/*==================================
+
+
+  Universal Styling
+
+
+======================================*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #45494e;
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+}
+
+.container {
+    background: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1,
+h2 {
+    padding: 16px 0;
+}
+
+
+/*==================================
+
+
+  Menu Styling
+
+
+======================================*/
+.menu {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    background: #3c3c3c;
+    width: 19%;
+    margin-bottom: 1px;
+    position: relative;
+    vertical-align: top;
+}
+
+.menu ul li a {
+    color: #fbfbfb;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.menu ul li a:hover {
+    background: white;
+    color: #3c3c3c;
+    transition: .3s;
+}
+
+.menu > ul > li:nth-child(1) {
+    border-top: 5px solid #fda085;
+}
+
+.menu > ul > li:nth-child(2) {
+    border-top: 5px solid #bff098;
+}
+
+.menu > ul > li:nth-child(3) {
+    border-top: 5px solid #ea8d8d;
+}
+
+.menu > ul > li:nth-child(4) {
+    border-top: 5px solid #d8b5ff;
+}
+
+.menu > ul > li:nth-child(5) {
+    border-top: 5px solid #c6ea8d;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    background: #3c3c3c;
+    width: 100%;
+}
+
+.menu svg {
+    position: relative;
+    top: 2px;
+}
+
+/*==================================
+
+
+  FLip Card Styling
+
+
+======================================*/
+.flip-card {
+    width: 280px;
+    height: 280px;
+    display: inline-block;
+    background: transparent;
+    margin: 30px 0;
+}
+
+.flip-card-back h2 {
+    padding: 0;
+}
+
+.flip-card img {
+    width: 100%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: width 2s, transform .6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 1px 4px 0 black;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    width: 50%;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: #45494e;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 100px 10px 0;
+}
+
+.flip-card-back a {
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: bold;
+    border-bottom: 1px dashed #d8b5ff;
+    transition: .3s;
+}
+
+.flip-card-back a:hover {
+    color: #d8b5ff;
+    transition: .3s;
+}
+
+/*==================================
+
+
+  Footer Styling
+
+
+======================================*/
+
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 40px 0;
+}
+
+footer a {
+    color: white;
+    font-size: 25px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: #c5c2c2;
+    transition: .3s;
+}
+
+.website {
+    margin-bottom: 15px;
+}
